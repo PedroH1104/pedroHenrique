@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedro Henrique - Projetos</title>        
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./css/fontawesome-free-6.2.1-web/css/all.min.css">         
+        <link rel="stylesheet" href="./style.css">           
+    </head>
+
+    <body>
+        <header>
+            <section class="header__desktop">
+                <div class="cabecalho">
+                    <div class="header__info">
+                        <img src="./img/foto__de__perfil.jpg" alt="Foto de perfil de Pedro Henrique" class="header__img">
+                        <div class="header__nomes">
+                            <p class="header__nome">Pedro Henrique</p>
+                            <p class="header__profissao">Desenvolvedor</p>
+                        </div>                
+                    </div>
+                    <nav class="header__nav">
+                        <ul class="nav__lista">
+                            <li class="nav__item"><a href="./index.html" class="nav__link">
+                                <i class="fa-solid fa-house icone__menu"></i>Home</a></li>                      
+                            <li class="nav__item nav__atual">
+                                <i class="fa-regular fa-folder-open icone__menu"></i>Projetos</li>
+                            <li class="nav__item"><a href="https://www.linkedin.com/in/pedro-santos-534a941b5/" class="nav__link" target="_blank">
+                                <i class="fa-brands fa-linkedin icone__menu"></i>Linkedin</a></li>
+                            <li class="nav__item"><a href="https://github.com/PedroH1104?tab=repositories" class="nav__link" target="_blank">
+                                <i class="fa-brands fa-square-github icone__menu"></i>Github</a></li>
+                            <li class="nav__item"><a href="https://www.instagram.com/pedro_h1104/" class="nav__link" target="_blank">
+                                <i class="fa-brands fa-instagram icone__menu"></i>Instagram</a></li>                        
+                    </nav>
+                </div>
+            </section>
+            <section class="header__mobile">                
+                <img src="./img/menu.png" class="header__img__menu">                
+                <nav class="menu__lateral">
+                    <a href="./index.html" class="menu__lateral__link menu__lateral__link__home">
+                        <i class="fa-solid fa-house icone__menu"></i>Home                     
+                    </a>                    
+                    <a href="#" class="menu__lateral__link menu__lateral__link__projetos menu__lateral__link__ativo">
+                        <i class="fa-regular fa-folder-open icone__menu"></i>Projetos
+                    </a>
+                    <a href="https://www.linkedin.com/in/pedro-santos-534a941b5/" class="menu__lateral__link menu__lateral__link__linkedin" target="_blank">
+                        <i class="fa-brands fa-linkedin icone__menu"></i>Linkedin
+                    </a>
+                    <a href="https://github.com/PedroH1104?tab=repositories" class="menu__lateral__link menu__lateral__link__github" target="_blank">
+                        <i class="fa-brands fa-square-github icone__menu"></i>Github
+                    </a>
+                    <a href="https://www.instagram.com/pedro_h1104/" class="menu__lateral__link menu__lateral__link__instagram" target="_blank">
+                        <i class="fa-brands fa-instagram icone__menu"></i>Instagram
+                    </a>
+                </nav>
+            </section>
+        </header>
+        <main class="main__conteudo">
+            <h2 class="main__titulo">PROJETOS</h2>
+            <div class="lista__botoes">
+                <button class="botao__projetos ativa" data-botao="HTMLCSS" data-linguagem>HTML CSS</button>
+                <button class="botao__projetos" data-botao="JavaScript" data-linguagem>JavaScript</button>
+            </div>
+
+            <h1 class="projetos__titulo">Qual projeto deseja conhecer?</h1> 
+            
+            <section data-projetos="HTMLCSS">
+
+                <div class="lista__botoes">                    
+                    <button class="botao__projetos ativa" data-botao="HTML" data-conteudo="1">Alura Books</button>
+                    <button class="botao__projetos" data-botao="HTML" data-conteudo="2">Alura Língua</button>
+                    <button class="botao__projetos" data-botao="HTML" data-conteudo="3">HZC</button>
+                    <button class="botao__projetos" data-botao="HTML" data-conteudo="4">Alura SPA</button>
+                    <button class="botao__projetos" data-botao="HTML" data-conteudo="5">OptimusTech</button>                    
+                </div>
+
+                <div class="conteudos__item" data-conteudo="1" data-conteudoHTML>
+                    <h2 class="conteudo__titulo">Alura Books</h2>
+                    <p class="conteudo__descricao">Projeto de um site que desenvolvi durante o curso de " HTML e CSS: responsividade com mobile-first ", para acessar o site completo basta clicar na imagem. Caso queira acessar ao código basta acessar a página do github - <a href="https://github.com/PedroH1104/Alura-Books" target="_blank">Alura Books</a></p>
+                    <a href="https://alura-books-nine-ashy.vercel.app" target="_blank"><img src="./img/aluraBooks.png" class="conteudo__img"></a>                                      
+                </div>
+
+                <div class="conteudos__item hide" data-conteudo="2" data-conteudoHTML>
+                    <h2 class="conteudo__titulo">Alura Língua</h2>
+                    <p class="conteudo__descricao">Projeto de um site que desenvolvi durante o curso de " HTML e CSS: praticando HTML/CSS ", para acessar o site completo basta clicar na imagem. Caso queira acessar ao código basta acessar a página do github - <a href="https://github.com/PedroH1104/Alura-L-ngua" target="_blank">Alura Língua</a></p>
+                    <a href="https://alura-lingua.vercel.app" target="_blank"><img src="./img/aluraLingua.png" class="conteudo__img"></a>                                      
+                </div>
+
+                <div class="conteudos__item hide" data-conteudo="3" data-conteudoHTML>
+                    <h2 class="conteudo__titulo">HZC</h2>
+                    <p class="conteudo__descricao">Projeto de um site que desenvolvi durante o curso de " CSS: dispondo elementos com Flexbox e Grid ", para acessar o site completo basta clicar na imagem. Caso queira acessar ao código basta acessar a página do github - <a href="https://github.com/PedroH1104/HZC" target="_blank">HZC</a></p>
+                    <a href="https://hzc-delta.vercel.app" target="_blank"><img src="./img/hzc.png" class="conteudo__img"></a>                                      
+                </div>
+
+                <div class="conteudos__item hide" data-conteudo="4" data-conteudoHTML>
+                    <h2 class="conteudo__titulo">Alura SPA</h2>
+                    <p class="conteudo__descricao">Projeto de um site que desenvolvi durante o curso de " SASS: CSS sintaticamente espetacular ", para acessar o site completo basta clicar na imagem. Caso queira acessar ao código basta acessar a página do github - <a href="https://github.com/PedroH1104/Alura-SPA" target="_blank">Alura SPA</a></p>
+                    <a href="https://alura-spa-eta.vercel.app" target="_blank"><img src="./img/aluraSpa.png" class="conteudo__img"></a>                                      
+                </div>
+
+                <div class="conteudos__item hide" data-conteudo="5" data-conteudoHTML>
+                    <h2 class="conteudo__titulo">Optimus Tech</h2>
+                    <p class="conteudo__descricao">Projeto que desenvolvi no desafio " 7 days " após finalizar a formação HTML CSS da Alura, para acessar o site completo basta clicar na imagem. Caso queira acessar ao código basta acessar a página do github - <a href="https://github.com/PedroH1104/OptimusTech" target="_blank">Optimus Tech</a></p>
+                    <a href="https://optimus-tech-three.vercel.app" target="_blank"><img src="./img/optimusTech.png" class="conteudo__img"></a>                                      
+                </div> 
+
+            </section>               
+            
+            <section class="hide" data-projetos="JavaScript">
+
+                <div class="lista__botoes">
+                    <button class="botao__projetos ativa" data-botao="JS" data-conteudo="6">Robotron</button>
+                    <button class="botao__projetos" data-botao="JS" data-conteudo="7">Mochila</button> 
+                    <button class="botao__projetos" data-botao="JS" data-conteudo="8">Nutricionista</button>
+                    <button class="botao__projetos" data-botao="JS" data-conteudo="9">Crossy Road</button> 
+                    <button class="botao__projetos" data-botao="JS" data-conteudo="10">Pong</button>                
+                    <button class="botao__projetos" data-botao="JS" data-conteudo="11">Numero Secreto</button>
+                </div>
+
+                <div class="conteudos__item projetos__js" data-conteudo="6" data-conteudoJS>
+                    <h2 class="conteudo__titulo">Robotron</h2>
+                    <p class="conteudo__descricao">Projeto que desenvolvi durante o curso de " JavaScript: manipulando o DOM ", para acessar o site completo basta clicar na imagem. O programa consiste na criação de um robô através de atributos que influenciam nas características de forma dinâmica. Caso queira acessar ao código basta acessar a página do github - <a href="https://github.com/PedroH1104/robotron" target="_blank">Robotron</a></p>
+                    <a href="https://robotron-ruddy.vercel.app" target="_blank"><img src="./img/robotron.png" class="conteudo__img"></a>                                      
+                </div>
+
+                <div class="conteudos__item hide projetos__js" data-conteudo="7" data-conteudoJS>
+                    <h2 class="conteudo__titulo">Mochila de Viagem</h2>
+                    <p class="conteudo__descricao">Projeto que desenvolvi durante o curso de " JavaScript na Web: armazenando dados no navegador ", para acessar o site completo basta clicar na imagem. O programa consiste em montar sua mala colocando a peça e quantidade necessária e podendo excluir ou modificar os valores. Caso queira acessar ao código basta acessar a página do github - <a href="https://github.com/PedroH1104/MochilaDeViagem" target="_blank">Mochila de Viagem</a></p>
+                    <a href="https://mochila-de-viagem-two.vercel.app" target="_blank"><img src="./img/mochilaDeViagem.png" class="conteudo__img"></a>                                      
+                </div>
+
+                <div class="conteudos__item hide projetos__js" data-conteudo="8" data-conteudoJS>
+                    <h2 class="conteudo__titulo">Nutricionista</h2>
+                    <p class="conteudo__descricao">Projeto que desenvolvi durante o curso de " JavaScript: programando na linguagem da web ", para acessar o site completo basta clicar na imagem. O programa auxilia nutricionista a guardar dados de pacientes e realizar calculos de forma dinâmica. Caso queira acessar ao código basta acessar a página do github - <a href="https://github.com/PedroH1104/Nutricionista" target="_blank">Nutricionista</a></p>
+                    <a href="https://nutricionista-tau.vercel.app" target="_blank"><img src="./img/aparecidaNutricionista.png" class="conteudo__img"></a>                                      
+                </div>
+
+                <div class="conteudos__item hide projetos__js" data-conteudo="9" data-conteudoJS>
+                    <h2 class="conteudo__titulo">Crossy Road</h2>
+                    <p class="conteudo__descricao">Projeto que desenvolvi durante o curso de " Lógica de programação: laços e listas com Javascript ". Consiste em um jogo semelhante ao Crossy Road</p>
+                    <p class="conteudo__descricao conteudo__descricao__detalhe">Para melhor visualização, utilize um computador.</p>
+                    <iframe class="jogo-travessia" src="https://editor.p5js.org/pedrohenrique110401/full/jNlObCAAY" width="500" height="442px"></iframe>
+                    <p>Use as setas(🠕 🠖 🠗 🠔) para jogar                       
+                </div>
+
+                <div class="conteudos__item hide projetos__js" data-conteudo="10" data-conteudoJS>
+                    <h2 class="conteudo__titulo">Pong</h2>
+                    <p class="conteudo__descricao">Projeto que desenvolvi durante o curso de " Lógica de programação: comece em lógica com o jogo Pong e Javascript ".</p>
+                    <p class="conteudo__descricao conteudo__descricao__detalhe">Para melhor visualização, utilize um computador.</p>
+                    <iframe class="jogo-pong" src="https://editor.p5js.org/pedrohenrique110401/full/QuCM0liep" width="600px" height="442px"></iframe>
+                    <div class="pong__div__p">
+                        <p class="pong__p">Use as setas(🠕 🠖 🠗 🠔) para jogar
+                        <p>Use (w, a, s ,d) para jogar 
+                    </div>                      
+                </div>               
+                <div class="conteudos__item hide projetos__js" data-conteudo="11" data-conteudoJS>
+                    <h2 class="conteudo__titulo">Número Secreto</h2>
+                    <p class="conteudo__descricao">Programa que desenvolvi durante o curso " JavaScript: validações e reconhecimento de voz " da Alura, para acessar o site completo basta clicar na imagem. Consiste em um jogo de acertar o número através do reconhecimento de voz, é recomendado a utilização do google chrome. Caso queira acessar ao código basta acessar a página do github - <a href="https://github.com/PedroH1104/numeroSecreto" target="_blank">Optimus Tech</a></p>
+                    <a href="https://numero-secreto-orpin.vercel.app" target="_blank"><img src="./img/numeroSecreto.png" class="conteudo__img"></a>                                                    
+                </div>
+                
+            </section>
+        </main>
+        
+        <footer>
+            <img class="rodape__img" src="./img/logo__footer.png">
+			<p class="copyright">&copy; Copyright - Pedro Henrique - 2022</p>
+        </footer>
+
+        <script src="./js/main.js"></script>
+        <script src="./js/mainMobile.js"></script>
+    </body>
+
+    
