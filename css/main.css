@@ -1,0 +1,211 @@
+main {
+    margin-top: 2em;    
+    padding: 0 10% 2em 10%;
+    background: linear-gradient(var(--branco) 0%, var(--cinza));	
+}
+
+main h2 {					
+    padding: 1em 0 1em 0   ;
+    font-size: 1.8em;		
+    font-weight: 700;
+}
+
+.main__descricao {
+    font-size: 1.2em;
+    margin-bottom: 0.37em;
+}
+
+main ul li a{
+    text-decoration: none;
+    color: var(--preto);
+}
+
+main ul li a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1024px){
+    main {
+        border-top: 2px solid var(--preto);
+        width:90vw;        
+        font-size: 10px;                
+        padding: 0 5vw 15px 5vw; 
+        margin: 0;                                      
+    }
+
+    .main__sobre {
+        text-align: center;
+    }
+    
+    main h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .main__descricao a {
+        text-decoration: underline;
+    }    
+}
+
+
+/* PROJETOS - MAIN */
+
+.main__conteudo {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.main__titulo {
+    display: none;
+}
+
+.projetos__titulo { 
+    margin-top: 1em;   
+    font-size: 2.5em;
+    font-weight: 700;        
+}
+
+.lista__botoes {
+    width: 100%;
+    display: flex; 
+    justify-content: center;
+    margin: 3em 0 1em 0;
+    gap: .5em;            
+}
+
+.botao__projetos {
+    background-color: var(--branco);    
+    padding: .5em 2em;    
+    font-size: 14px;
+}
+
+.botao__projetos:hover {
+    cursor: pointer;
+}
+
+.conteudos__item {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    text-align: center;
+}
+
+.conteudo__titulo { 
+    font-size: 2em;
+    font-weight: 500;        
+}
+
+.conteudo__descricao {
+    margin: 0 10%;
+}
+
+.conteudo__descricao__detalhe {
+    display: none;
+}
+
+.conteudo__img {
+    width: 80%;
+    margin: 3em 10% 2em 10%;              
+}
+
+.hide {
+    display: none;
+}
+
+.ativa {
+    background-color: var(--roxo);
+    color: var(--branco);
+}
+
+/* APENAS APLICATIVOS */
+
+.jogo-pong, .jogo-travessia {			 
+	display: inline block;
+	border: 1px solid #000000;	
+    margin: 3em 0 2em 0;		
+}
+
+.pong__div__p {
+    display: flex;      
+}
+
+.pong__p {
+    margin-right: 9em;
+}
+
+@media screen and (max-width:1024px){
+    .main__conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100vw;
+        padding: 1em 0 1em 0;
+        margin: 0;
+        text-align: center;        
+    }
+
+    .main__titulo {
+        display: block;
+        font-size: 24px;        
+        padding: 0;
+        margin-top: .5em;
+    }    
+    
+    .lista__botoes {
+        width: 90vw;        
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;   
+        margin: 2em 5vw 0 5vw;
+        gap: 1em;
+    }
+
+    .botao__projetos {
+        width: auto;
+        height: auto;
+        background-color: var(--branco);    
+        padding: .4em 1em;    
+        font-size: 14px;        
+    }
+
+    .projetos__titulo { 
+        margin: 1em 0 0 0;  
+        font-size: 2.2em;
+        font-weight: 700;        
+    }
+
+    .conteudo__titulo {
+        margin-top: 1em;
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    .conteudo__descricao {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .conteudo__descricao__detalhe {
+        display: block;
+    }
+    
+    .jogo-pong, .jogo-travessia {
+        width: 80vw;
+        height: 65vw;
+    }
+
+    .pong__div__p {
+        width: 80vw;
+    }    
+
+    .hide {
+        display: none;
+    }
+    
+    .ativa {
+        background-color: var(--roxo);
+        color: var(--branco);
+    }
+    
+}
